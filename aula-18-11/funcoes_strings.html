@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+    <script>
+        // slice = cortar inicio
+        let alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWSYZ";
+        console.log(alfabeto.slice(9, 10), alfabeto.slice(14, 15), alfabeto.slice(18, 19), alfabeto.slice(4, 5));
+        // slice = cortar fim
+
+        // length = comprimento inicio
+        let texto = "escola senai";
+        let tamanho = texto.length;
+        document.write(`O tamanho do texto ("<b>${texto.toUpperCase()}</b>") é de: ${tamanho} letras. <br/>`);
+        // length = comprimento fim
+
+        // charAt = posição inicio
+        let indice = Math.round(Math.random() * 11);
+        let posicao = texto.charAt(indice);
+        document.write(`Posição ${indice}: ${posicao.toUpperCase()}. <br/>`);
+        // charAt = posição fim
+
+        // indexOf = indice de ... inicio
+        let indiceTexto = texto.indexOf("e");
+        document.write(`Indice de 'E' é: ${indiceTexto}. <hr/>`);
+        // indexOf = indice de ... fim
+
+        // replace = substituir inicio
+        let substituir = texto.replace("escola", "instituição");
+        document.write(`Substituindo 'escola': <b>${substituir.toUpperCase()}</b>. <br/>`);
+        // replace = substituit fim
+
+        // substring = Parte da String inicio
+        let parteString = texto.substr(7, 11);
+        document.write(`Parte da String (SubString): ${parteString}. <hr/>`);
+        // substring = Parte da String fim
+
+        // toLowerCase = Minúsculo inicio
+        let nome = "JOSE";
+        document.write(`Nome minusculo: ${nome.toLowerCase()}. <br/>`);
+        // toLowerCase = Maiúsculo fim
+
+        // toUpperCase = Maiusculo inicio
+        let saudacao = "ola, tudo bem?";
+        document.write(`Saudação Maiuscula: ${saudacao.toUpperCase()} <hr/>`);
+        // toUpperCase = Maiusculo fim
+
+        // trim = Remover os espaços laterais inicio
+        let lateralSemEspaco = texto.trim();
+        document.write(`Texto sem espaço lateral (Trim): ${lateralSemEspaco}.`);
+        // trim = Remover os espaços laterais fim
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

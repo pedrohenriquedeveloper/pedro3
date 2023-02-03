@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exercicio</title>
+        <script>
+            var objetos = Array('cadeira', 'impressora', 'garfo')   
+            
+            function adicionar(){
+            var texto = document.getElementById('texto').value;
+
+            if (texto==''){
+                alert("Insira um valor válido")
+            }
+
+            if (objetos.includes(texto)) {
+                alert("Objeto já adicionado")
+            }else if(texto != ''){
+                objetos.push(texto);
+                console.log(objetos)
+                document.getElementById('texto').value = '';
+            }
+            
+        }
+
+
+        function ordenar(){
+            console.log(objetos.sort());
+        }
+        
+
+    </script>
+    
+</head>
+<body>
+    <input type="text" name="" id="texto">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="ordenar()">Ordenar</button>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+    font-family: 'lato', sans-serif;
+}
+
+.bg-primary-color{
+    background-color: white;
+}
+
+.bg-secondary-color{
+    background-color: #ece8ea;
+}
+
+.bg-dark-color{
+    background-color: #050505;
+}
+
+.primary-color{
+    color: #050505;
+}
+
+.secondary-color{
+    color: #7a7a7a;
+}
+
+/* NAVBAR */
+
+#navbar{
+    border-bottom: 1px solid #7a7a7a;
+}
+
+#navbar a:hover{
+    color: #7a7a7a;
+    text-decoration: overline;
+}
+
+/* #navbar a.active{
+    border-bottom: 1px solid #050505;
+} */
+
+.navbar-brand{
+    display: flex;
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.navbar-brand span{
+    font-weight: 700px;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item{
+    margin: 0 16px;
+
+}
+
+#slider{
+    margin-top: 128px;
+    margin-bottom: 16px;
+}
+
+#slider .carousel-caption{
+    bottom: 48px;
+}
+
+#slider .carousel-caption h5{
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+.btn{
+    border-radius: 0;
+}
+
+#slider .btn{
+    padding: 5px 13px;
+    font-size: 16px;
+    margin-top: 16px;
+
+}
+
+.carousel-control-prev i,
+.carousel-control-next i{
+    color: #111;
+    font-size: 48px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: #222;
+    opacity: 0.8;
+}
+
+.carousel-indicators .active{
+    background-color: black;
+}
+
+@media (min-width: 768px){
+    #slider .carousel-caption{
+        bottom: 240px;
+    }
+    #slider .carousel-caption h5{
+        font-size: 64px;
+        text-shadow: black 2px 3px;
+    }
+    #slider .btn{
+        padding: 5px 13px;
+        font-size: 20px ;
+    }
+}
+
+/* MINI BANNERS */
+
+#mini-banners{
+    margin-bottom: 64px;
+}
+
+#mini-banners .card{
+    padding: 32px 5px;
+    border-radius: 0;
+}
+
+.card{
+    box-shadow: black 4px 4px 4px;
+}
+
+#mini-banners i{
+    font-size: 64px;
+}
+
+#mini-banners .card-titlle{
+    margin-bottom: 24px;
+}
+
+#mini-banners .btn{
+    margin-top: 24px;
+    padding: 10px 20px;
+}
+
+@media (min-width: 720px){
+    #mini-banners{
+        margin-top: -94px;
+    }
+}

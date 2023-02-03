@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio</title>
+        <script>
+            let num1 = prompt("Digite um número: ");
+            let operacao = prompt("Qual operação gostaria de efetuar? ");
+            let num2 = prompt("Digite outro número: ");
+        
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            function calculo(num1, num2, operacao) {
+                if (operacao === "soma") {
+                    return `O resultado da soma é: ${num1 + num2}.`;
+
+                } else if (operacao === "subtração" || operacao === "subtracao") {
+                    return `O resultado da subtração é: ${num1 - num2}.`;
+
+                } else if (operacao === "divisão" || operacao === "divisao") {
+                    return `O resultado da divisão é: ${num1 / num2}.`;
+
+                } else if (operacao === "multiplicação" || operacao === "multiplicacao") {
+                    return `O resultado da multiplicação é: ${num1 * num2}.`;
+
+                } else {
+                    return "Operação Inválida!";
+                };
+                // return operacao === "soma" ? num1 + num2 : num1 - num2;
+            }
+
+            document.write(calculo(num1, num2, operacao));
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

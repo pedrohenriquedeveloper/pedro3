@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nome = prompt("Digite seu nome");
+        var alturaEmCM = prompt("Digite sua altura (Em centímetros)");
+        var peso = prompt("Digite seu peso");
+        function resultado(){
+            document.write( ( nome ) + " possui índice de massa corporal igual a  " + ( massa ) + ", sendo classificado como: " + (situacao) + "</br>")
+        }
+
+        alturaEmCM = parseFloat(alturaEmCM);
+        peso = parseFloat(peso);
+
+        var alturaEmMetros = alturaEmCM / 100;
+
+        var massa = peso / (alturaEmMetros * alturaEmMetros);
+
+        var situacao;
+
+        switch (true){
+            case massa < 16:
+                situacao = " Baixo peso muito grave "
+                break;
+            case massa > 16 && massa < 16.99:
+                situacao = " Baixo peso grave "
+                break;
+            case massa > 17 && massa < 18.49:
+                situacao = " Baixo peso "
+                break;
+            case massa > 18.50 && massa < 24.99:
+                situacao = " Peso normal "
+                break;
+            case massa > 25 && massa < 29.99:
+                situacao = " Sobrepeso "
+                break;
+            case massa > 30 && massa < 34.99:
+                situacao = "  Obesidade grau I "
+                break;
+            case massa > 35 && massa < 39.99:
+                situacao = "  Obesidade grau II "
+                break;
+            case massa > 40:
+                situacao = " Obesidade grau III " 
+                break;
+            default:
+                situacao = "ERRO"                  
+        }
+            resultado();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

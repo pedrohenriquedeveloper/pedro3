@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <script>
+        function foco(){
+            document.getElementById("texto").style.background = "yellow";
+            document.getElementById("texto").style.color = "black";
+        }
+
+        function semFoco(){
+            var texto = document.getElementById("texto").value; 
+
+            var tamanhoTexto = texto.length;
+
+            if(tamanhoTexto < 3) {
+                document.getElementById("texto").style.background = "red";
+                document.getElementById("texto").style.color = "white";
+            }else{
+                document.getElementById("texto").style.background = "green";
+                document.getElementById("texto").style.color = "white";
+            }
+        }
+    </script>
+   
+   <style>
+        input{
+            width: 250px;
+            height: 100px;
+            font-size: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        body{
+            text-align: center;
+            background-image: url(img/flamengo.webp);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <input onfocus="foco();" onblur="semFoco()"
+    type="text" name="testinho" id="texto">
+</body>
+</html>

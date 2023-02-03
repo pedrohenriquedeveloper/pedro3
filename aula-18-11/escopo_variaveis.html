@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escopo Variaveis</title>
+        <script>
+            // 3 escopos: global, função e o bloco.
+            var serie = "La Casa de Papel";
+
+
+            // Escopo de bloco 
+            if (true) {
+                var serie2 = "Game of Thrones"; 
+                document.write(`${serie} <br/>`);
+            };
+
+            document.write(serie2);
+
+            function x() {
+                var serie3 = "Anarquia";
+                document.write(`<br/> ${serie2} <br/> ${serie}`);
+            }
+
+            x();
+
+            // document.write(serie3);
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
